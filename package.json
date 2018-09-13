@@ -1,0 +1,23 @@
+{
+  "name": "performma",
+  "version": "1.0.0",
+  "description": "\"# performma\"",
+  "main": "index.js",
+  "scripts": {
+    "build": "sass --watch .:dist/ --style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Guilheeeeeeerme/performma.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Guilheeeeeeerme/performma/issues"
+  },
+  "homepage": "https://github.com/Guilheeeeeeerme/performma#readme",
+  "devDependencies": {
+    "sass": "^1.13.4"
+  }
+}

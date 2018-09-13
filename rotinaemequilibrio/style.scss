@@ -1,0 +1,245 @@
+/*
+Theme Specia Child
+Author: Guilherme
+Version: 6.0
+Description: Performma Custom Theme.
+Template: specia
+*/
+
+
+@import url('https://fonts.googleapis.com/css?family=Leckerli+One');
+
+/**
+*	Tiles
+**/
+.rpwwt-widget {
+	
+	ul {
+
+		display: block;
+
+		li {
+
+			display: inline-block;
+			height: 100%;
+			border: 0;
+			box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
+			-webkit-transition: 0.2s ease;
+			transition: 0.2s ease;
+			overflow: hidden;
+			padding: 0;
+
+			@media (min-width: 768px) {
+				& {
+					/* For desktop: */
+					width: 40%;
+					margin: 5%;
+				}
+			}
+
+			@media (max-width: 768px) {
+				& {
+					/* For mobile: */
+					width: 100%;
+					margin: 0%;
+				}
+			}
+
+			a {
+
+				display: block;
+		
+				img {
+					width: 100%;
+					float: none;
+				}
+
+			}
+
+			&:hover {
+
+				a {
+
+					img {
+						margin-bottom: -50%;
+					}
+				}
+				
+				// .rpwwt-post-categories{
+				// 	top: -320px;
+				// }
+				
+				// .rpwwt-post-title {
+				// 	top: -140px;
+				// }
+
+				// .rpwwt-post-excerpt {
+				.rpwwt-post-comments-number {
+					top: -50px;
+				}
+
+				.rpwwt-post-excerpt {
+					display: inline-block;
+				}
+				
+			}
+			
+			.rpwwt-post-title {
+				position: relative;
+			   	background: white;
+				padding: 30px 30px 30px 30px;
+				height: 160px;
+				display: inline-block;
+				color: #cd5c5c;
+				font-size:26px;
+				line-height:26px;
+				font-weight: 700;
+				font-family: 'Leckerli One',handwriting;
+			}
+			
+			.rpwwt-post-categories {    
+				position: relative;
+				display: inline-block;
+				top: -180px;
+
+				background-color:rgb(221, 153, 51);
+				color:rgb(255, 255, 255);
+				cursor:pointer;
+				font-family:Raleway, Helvetica, Arial, Lucida, sans-serif;
+				font-size:14px;
+				font-weight:600;
+				line-height:14px;
+				padding :10px 15px 10px 15px;
+				text-transform:uppercase;
+				word-wrap:break-word;
+			}
+			
+			.rpwwt-post-excerpt {
+				background: white;
+				position: relative;
+				display: none;
+				top: -50px;
+				padding: 0px 30px 40px 30px;
+				font-family: Raleway, Helvetica, Arial, Lucida, sans-serif;
+				font-size:14px;
+				font-weight:500;
+			}
+
+			.rpwwt-post-comments-number {
+				background: white;
+				position: relative;
+				display: inline-block;
+				padding: 0px 30px 10px 30px;
+			}
+
+		}
+
+	}
+}		
+
+/**
+*	Slider no top
+**/
+.performma-slider {
+	#metaslider_91 {
+		margin: 0;
+		ol {
+			margin-top: 0;
+			padding-bottom: 40px;
+		}
+	}
+}
+
+/**
+*	Menu com texto centralizado
+**/
+.performma-header {
+	background-color: #000000!important;
+	padding-top: 15px;
+	padding-right: 0px;
+	padding-bottom: 15px;
+	padding-left: 0px;
+	position: relative;
+	margin: 0;
+	border: 0;
+	outline: 0;
+	background: 0 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	
+	.performma-navbar {
+		background: black;
+		text-align: center;
+		position: relative;
+		margin: 0;
+		padding: 0;
+		border: 0;
+		outline: 0;
+		background: 0 0;
+		font-size: 100%;
+		box-sizing: border-box;
+		display: block;
+
+		.container {
+
+			position: relative;
+			width: 80%;
+			max-width: 1080px;
+			margin: auto;
+			text-align: center;
+
+			
+			.navbar-header {
+				display: flex;
+				justify-content: center;
+			}
+
+			.table-div {
+				float: none;
+				display: table;
+				margin: 0 auto;
+
+				ul {
+					min-width: 100%;
+					list-style: none;
+					padding-top: 10px;
+					padding-bottom: 10px;
+					
+					li {
+						display: inline;
+						font-weight: 500;
+						
+						a {  
+							font-family: 'Open Sans',Helvetica,Arial,Lucida,sans-serif;
+							font-weight: 700;
+							background-color: black;
+							text-transform: uppercase;
+							font-size: 15px;
+							line-height: 1.4em;
+					/*      	padding-bottom: 29px; */
+							word-wrap: break-word;
+							display: block;
+							position: relative;
+							text-decoration: none;
+							cursor: pointer;
+
+							&:active {   
+								color: #00b9c9!important;
+							}
+						}
+
+						.dropdown-menu {
+							padding: 0;
+
+							a {
+								color: white;
+							}
+						}
+					}
+				}
+			}
+
+		}	
+	}
+
+}
