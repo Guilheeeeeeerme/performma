@@ -1,1 +1,8 @@
-@import"../specia/style.css"/*# sourceMappingURL=style.css.map */
+#performma-header .upper{
+	width:123%;
+	height:52px;
+	background:url(./img/sprite_2.png) 0 -52px no-repeat;
+	background-size:100% auto;
+	position:relative;
+	margin:0 0 23px -11%;
+}/*# sourceMappingURL=style.css.map */
