@@ -1,8 +1,1 @@
-#performma-header .upper{
-	width:123%;
-	height:52px;
-	background:url(./img/sprite_2.png) 0 -52px no-repeat;
-	background-size:100% auto;
-	position:relative;
-	margin:0 0 23px -11%;
-}/*# sourceMappingURL=style.css.map */
+#performma-header-container{width:940px;min-height:100%;position:relative;margin:0 auto}#performma-header-container #performma-header{padding:0 0 28px}#performma-header-container #performma-header .upper{width:123%;height:52px;background:url(https://github.com/Guilheeeeeeerme/performma/blob/master/conteudoscompartilhados/img/sprite_2.png?raw=true) 0 -52px no-repeat;background-size:100% auto;position:relative;margin:0 0 23px -11%}#performma-header-container #performma-header #menu-performma-menu{height:50px;margin:15px -50px;color:#58595b;font-size:11px;text-align:right;position:relative;top:-50px}#performma-search-form{position:absolute;right:0;bottom:0;padding:31px 0 0;color:#58595b;top:-10px}#performma-search-form #search{width:396px;height:31px;border:1px solid #bcbec0;border-radius:20px;font-size:15px}#performma-search-form .performma-search-icon{width:25px;height:25px;background:#4885c4 url(https://github.com/Guilheeeeeeerme/performma/blob/master/conteudoscompartilhados/img/sprite_1.png?raw=true) -83px 0;position:absolute;top:34px;right:3px;border-radius:12px;display:block}/*# sourceMappingURL=style.css.map */

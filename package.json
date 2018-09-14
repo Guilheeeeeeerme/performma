@@ -4,7 +4,7 @@
   "description": "\"# performma\"",
   "main": "index.js",
   "scripts": {
-    "build": "sass --watch .:dist/ "
+    "build": "sass --watch .:dist/ --style compressed"
   },
   "repository": {
     "type": "git",
