@@ -5,17 +5,205 @@ Description: Performma Custom Theme.
 Template: specia
 */
 
-$dragtop: 50px;
+$dragtop: 55px;
 
-#performma-header-container {
-	width: 940px;
+body * {
+	font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif;
+}
+
+#performma-article {
+
+    padding: 40px 0 76px;
+
+	div.col-md-4.col-sm-12 > img {
+		width: 100% !important;
+		height: auto !important;
+		margin: 0 20px 0 0 !important;
+		z-index: 1 !important;
+		color: transparent !important;
+		font-size: 0 !important;
+		vertical-align: middle !important;
+	}
+
+	h2.author.vcard  {    
+		font-size: 20px;
+		line-height: 20px;
+		color: #2c61aa;
+	}
+
+	h5.cat-links {    
+		font-size: 15px;
+		line-height: 60px;
+		color: #58595b;
+	}
+
+	.entry-content{
+		padding-left: 0px;
+		height: 180px;
+		overflow: hidden;
+		word-wrap: break-word;
+		font-size: 15px;
+		line-height: 22px;
+		color: #58595b;
+	}
+
+}
+
+#performma-middle-content > section > div > div > div.site-content > h3 {
+	display: none !important;
+}
+
+#wtpsw-carousel-1 > div > div {
+
+	@media (max-width: 768px) {
+		
+		&, 
+		& > div.wtpsw-post-carousel-slides {
+			/* For mobile: */
+			width: 100% !important;
+			display: inline-block;
+		}
+	}
+}
+
+
+#lcp_instance_0 {
+
+	list-style: none;
+	display: block;
+	list-style-type: none;
+
+	li {
+		padding: 5px;
+		margin: 0%;
+		position: relative;
+		display: inline-block;
+
+		@media (min-width: 768px) {
+			& {
+				/* For desktop: */
+				width: 25%;
+				display: inline-block;
+
+				img {
+					height: 100%;
+					width: auto;
+				}
+
+			}
+		}
+
+		@media (max-width: 768px) {
+			& {
+				/* For mobile: */
+				width: 100%;
+				display: inline-block;
+
+				img {
+					width: 100%;
+					height: auto;
+				}
+
+				> a:nth-child(1) {
+					font-size: 2em;
+				}
+
+			}
+		}
+	
+		> a:nth-child(1) {
+			margin: 5px;
+			background-color: rgba($color: #aeaeae, $alpha: 0.5);
+			color: white;
+			font-weight: bolder;
+			padding: 5px;
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			// margin-left: 20px;
+			// display:table-cell;
+			// width:350px;
+			// vertical-align:top;
+		}
+
+
+	} 
+}
+
+#performma-middle-content {
+
+	#tab_container_510 {
+
+		// float: none;
+		// display: table;
+		// margin: 0 auto;
+
+		#myTab_510 {
+
+			// min-width: 100%;
+			height: 43px;
+			background: url(https://github.com/Guilheeeeeeerme/performma/blob/master/conteudoscompartilhados/img/sprite_3.png?raw=true) 0 -60px;
+			background-size: 101% auto;
+			margin: 0 0 17px;
+			padding: 19px 62px 0;
+			text-align: center;
+			overflow: hidden;
+
+
+			li {
+				// display: inline;
+				a {
+					background-color: transparent !important;
+					border: none !important;
+					padding-top: 0px !important;
+					padding-bottom: 0px !important;
+				}
+
+				&.active {
+					background: #fff;
+					color: #58595b;
+					text-decoration: none;
+				}
+			}
+		}
+			
+	}
+	
+	section > div > div > div.site-content > h1 {
+		height: 53px;
+		background: url(https://github.com/Guilheeeeeeerme/performma/blob/master/conteudoscompartilhados/img/sprite_3.png?raw=true) 0 -110px;
+		background-size: 101% auto;
+		margin: 0 0 31px 0;
+		color: #fff;
+		font-size: 25px;
+		line-height: 53px;
+		text-align: center;
+	}
+}
+
+#performma-header-container,
+.performma-container {
+	width: 75%;
     min-height: 100%;
     position: relative;
     margin: 0 auto;
+}
+
+#performma-header-container {
 
 	#performma-header {
 	
 		padding: 0 0 28px;
+
+		> nav {
+			box-shadow: none;
+
+			> div.navbar-header > a.custom-logo-link > img {
+				height: 60px;
+				width: 60px;
+				padding: 0;
+			}
+		}
 	
 		.upper {
 			width: 123%;
@@ -28,7 +216,7 @@ $dragtop: 50px;
 
 		#menu-performma-menu {
 			height: 50px;
-			margin: 15px 0 -$dragtop;
+			margin: 15px 0px;
 			color: #58595b;
 			font-size: 11px;
 			text-align: right;
@@ -41,12 +229,13 @@ $dragtop: 50px;
 }
 
 #performma-search-form {    
+	position: relative;
+    float: right;
+    // padding: 31px 0 0;
+	color: #58595b;    
 	position: absolute;
     right: 0;
-    bottom: 0;
-    padding: 31px 0 0;
-	color: #58595b;
-    top: -10px;
+    // top: -10px;
 
 	#search {
 		width: 396px;
@@ -55,15 +244,18 @@ $dragtop: 50px;
 		border: 1px solid #bcbec0;
 		border-radius: 20px;
 		font-size: 15px;
+		font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif;
 	}
 
 	.performma-search-icon {
+		cursor: pointer;
 		width: 25px;
 		height: 25px;
 		background: #4885c4 url(https://github.com/Guilheeeeeeerme/performma/blob/master/conteudoscompartilhados/img/sprite_1.png?raw=true) -83px 0px;
 		position: absolute;
-		top: 34px;
-		right: 3px;
+		top: -3px;
+		right: 15px;
+		margin: 6px;
 		border-radius: 12px;
 		display: block;
 			
