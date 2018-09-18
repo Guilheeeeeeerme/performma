@@ -118,6 +118,7 @@ body * {
 #performma-middle-content {
 	
 	section > div > div > div.site-content > h1 {
+		padding-top: 10px;
 		height: 53px;
 		background: url(https://github.com/Guilheeeeeeerme/performma/blob/master/conteudoscompartilhados/img/sprite_3.png?raw=true) 0 -110px;
 		background-size: 101% auto;
@@ -153,6 +154,11 @@ body * {
 					li {
 						display: inline;
 						font-weight: 500;
+
+						a {
+							border: none !important;
+							background-color: transparent !important;
+						}
 					}
 					
 				}
