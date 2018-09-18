@@ -11,6 +11,12 @@ body * {
 	font-family: 'Fredericka the Great', cursive;
 }
 
+#bs-example-navbar-collapse-1 {
+	#performma-search-form {
+		bottom: 10px;
+	}
+}
+
 #performma-article {
 
     padding: 40px 0 76px;
@@ -85,11 +91,13 @@ body * {
 			& {
 				/* For mobile: */
 				display: block;
-				height: 320px;
-				width: auto;
+				width: 100%;
+				height: auto;
 
 				> a:nth-child(1) {
-					font-size: 2em;
+					padding: 10%;
+					width: 100%;
+					font-size: 4em;
 				}
 
 			}
@@ -103,10 +111,9 @@ body * {
 			position: absolute;
 			bottom: 0;
 			right: 0;
-			line-height: 22px;
 			color: #444;
 			text-decoration: none;
-			font-size: 18px !important;
+			font-size: 1em;
 			line-height: 22px;
 
 
@@ -120,12 +127,12 @@ body * {
 	section > div > div > div.site-content > h1 {
 		padding-top: 10px;
 		height: 53px;
-		background: url(https://github.com/Guilheeeeeeerme/performma/blob/master/conteudoscompartilhados/img/sprite_3.png?raw=true) 0 -110px;
-		background-size: 101% auto;
+		background: url(https://github.com/Guilheeeeeeerme/performma/blob/master/conteudoscompartilhados/img/sprite_4.png?raw=true) no-repeat;
+		background-size: 100% auto;
 		margin: 0 0 31px 0;
 		color: #fff;
-		font-size: 25px;
-		line-height: 53px;
+		font-size: 1.5em;
+		line-height: 30px;
 		text-align: center;
 	}
 	
@@ -142,7 +149,7 @@ body * {
 			#tab_container_510 {
 
 				position: relative;
-				background: url(https://github.com/Guilheeeeeeerme/performma/blob/master/conteudoscompartilhados/img/sprite_3.png?raw=true) 0 -60px;
+				background: url(https://github.com/Guilheeeeeeerme/performma/blob/master/conteudoscompartilhados/img/sprite_5.png?raw=true) no-repeat; 
 				background-size: 101% auto;
 
 				ul.wpsm_nav {
@@ -290,7 +297,6 @@ body * {
 
     position: absolute;
 	right: 0;
-	padding-bottom: 25px;
 
 	#search {
 		position: relative;
@@ -304,7 +310,7 @@ body * {
 		width: 25px;
 		height: 25px;
 		border-radius: 50%;
-		background: #4885c4 url(https://github.com/Guilheeeeeeerme/performma/blob/master/conteudoscompartilhados/img/sprite_1.png?raw=true) -83px 0px;
+		background: #4885c4 url(https://github.com/Guilheeeeeeerme/performma/blob/master/conteudoscompartilhados/img/sprite_1.png?raw=true) -83px 0px no-repeat;
 	}
 }
 
