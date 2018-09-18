@@ -12,6 +12,17 @@ body * {
 	// font-family: 'Fredericka the Great', cursive;
 }
 
+#loginform {
+	margin-top: 20px;
+	* {
+		font-size: 12px;
+	}
+	#user_login, 
+	#user_pass {
+		height: 30px;
+	}
+}
+
 #bs-example-navbar-collapse-1 {
 	#performma-search-form {
 		bottom: 10px;
@@ -129,15 +140,14 @@ body * {
 		// font-family: 'Fredericka the Great', cursive !important;
 		// padding-top: 10px;
 		// height: 85px;
-		background: url(https://github.com/Guilheeeeeeerme/performma/blob/master/conteudoscompartilhados/img/sprite_5.png?raw=true) no-repeat;
-		// background-size: 100% auto;
+		// background: url(https://github.com/Guilheeeeeeerme/performma/blob/master/conteudoscompartilhados/img/sprite_5.png?raw=true) no-repeat;
 		margin: 0 0 31px 0;
-		color: white !important;
-		// font-size: 1.5em;
-		font-size: 1em;
-		background-size: 100% 75%;
-		// line-height: 53px;
+		color: #fff !important;
+		font-size: 1.5em;
+		background-size: 100% 110%;
 		text-align: center;
+		background: #343434;
+		border-radius: 12px;
 	}
 	
 	#performma-menu-outer {
@@ -149,12 +159,26 @@ body * {
 			// width: 100%;
 			// margin: auto;
 			// text-align: center;
+
+			#performma-bg {
+				position: relative;
+    			top: 50px;
+				background: #343434;
+				border-radius: 12px;
+				width: 100%;
+				height: 43px;
+			}
 		
 			#tab_container_510 {
 
 				position: relative;
-				background: url(https://github.com/Guilheeeeeeerme/performma/blob/master/conteudoscompartilhados/img/sprite_4.png?raw=true) no-repeat; 
-				background-size: 101% auto;
+				// background: url(https://github.com/Guilheeeeeeerme/performma/blob/master/conteudoscompartilhados/img/sprite_4.png?raw=true) no-repeat; 
+				// background-size: 101% auto;
+				margin: 0 0 31px 0;
+				color: #fff !important;
+				font-size: 1.5em;
+				background-size: 100% 110%;
+				text-align: center;
 
 				ul.wpsm_nav {
 					position: absolute;
@@ -163,6 +187,10 @@ body * {
 					height: 43px;
 
 					li {
+
+						* {
+							font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif !important;
+						}
 
 						// * {
 						// 	font-family: 'Fredericka the Great', cursive !important;
@@ -177,13 +205,14 @@ body * {
 						}
 					}
 
-					// li.active {
-					// 	a {
-					// 		color: #cf1717 !important;
-					// 		text-decoration: underline overline;
-					// 		font-weight: bolder;
-					// 	}
-					// }
+					li.active {
+						a {
+							// color: #cf1717 !important;
+							color: #f68b24 !important;
+							text-decoration: underline overline;
+							font-weight: bolder;
+						}
+					}
 					
 				}
 
@@ -206,6 +235,17 @@ body * {
 
 	}
 
+}
+
+#performma-login-to-download {
+	display: block;
+	text-align: center;
+	font-weight: bolder;
+}
+
+.performma-login-jumbotron {
+	margin: 0 25% 5% 25%;
+    border-radius: 10%;
 }
 
 #performma-header-container,
@@ -280,7 +320,16 @@ body * {
 		position: relative;
 		left: 25px;
 		height: 25px;
+		width: 300px;
 		border-radius: 12px;
+
+		@media (max-width: 768px) {
+			& {
+				/* For mobile: */
+				width: 100%;
+			}
+		}
+
 	}
 
 	.performma-search-btn {
