@@ -5,10 +5,11 @@ Description: Performma Custom Theme.
 Template: specia
 */
 
-@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great');
+// @import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great');
 
 body * {
-	font-family: 'Fredericka the Great', cursive;
+	font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif;
+	// font-family: 'Fredericka the Great', cursive;
 }
 
 #bs-example-navbar-collapse-1 {
@@ -125,12 +126,13 @@ body * {
 #performma-middle-content {
 	
 	section > div > div > div.site-content > h1 {
+		// font-family: 'Fredericka the Great', cursive !important;
 		padding-top: 10px;
-		height: 53px;
-		background: url(https://github.com/Guilheeeeeeerme/performma/blob/master/conteudoscompartilhados/img/sprite_4.png?raw=true) no-repeat;
+		height: 85px;
+		background: url(https://github.com/Guilheeeeeeerme/performma/blob/master/conteudoscompartilhados/img/sprite_3.png?raw=true) no-repeat;
 		background-size: 100% auto;
 		margin: 0 0 31px 0;
-		color: #fff;
+		color: white !important;
 		font-size: 1.5em;
 		line-height: 30px;
 		text-align: center;
@@ -149,7 +151,7 @@ body * {
 			#tab_container_510 {
 
 				position: relative;
-				background: url(https://github.com/Guilheeeeeeerme/performma/blob/master/conteudoscompartilhados/img/sprite_5.png?raw=true) no-repeat; 
+				background: url(https://github.com/Guilheeeeeeerme/performma/blob/master/conteudoscompartilhados/img/sprite_3.png?raw=true) no-repeat; 
 				background-size: 101% auto;
 
 				ul.wpsm_nav {
@@ -159,6 +161,11 @@ body * {
 					height: 43px;
 
 					li {
+
+						// * {
+						// 	font-family: 'Fredericka the Great', cursive !important;
+						// }
+
 						display: inline;
 						font-weight: 500;
 
@@ -167,6 +174,14 @@ body * {
 							background-color: transparent !important;
 						}
 					}
+
+					// li.active {
+					// 	a {
+					// 		color: #cf1717 !important;
+					// 		text-decoration: underline overline;
+					// 		font-weight: bolder;
+					// 	}
+					// }
 					
 				}
 
@@ -188,45 +203,6 @@ body * {
 		}
 
 	}
-
-	
-
-	// #tab_container_510 {
-
-	// 	// float: none;
-	// 	// display: table;
-	// 	// margin: 0 auto;
-
-	// 	#myTab_510 {
-
-	// 		// min-width: 100%;
-	// 		height: 43px;
-	// 		background: url(https://github.com/Guilheeeeeeerme/performma/blob/master/conteudoscompartilhados/img/sprite_3.png?raw=true) 0 -60px;
-	// 		background-size: 101% auto;
-	// 		margin: 0 0 17px;
-	// 		padding: 19px 62px 0;
-	// 		text-align: center;
-	// 		overflow: hidden;
-
-
-	// 		// li {
-	// 		// 	// display: inline;
-	// 		// 	a {
-	// 		// 		background-color: transparent !important;
-	// 		// 		border: none !important;
-	// 		// 		padding-top: 0px !important;
-	// 		// 		padding-bottom: 0px !important;
-	// 		// 	}
-
-	// 		// 	&.active {
-	// 		// 		background: #fff;
-	// 		// 		color: #58595b;
-	// 		// 		text-decoration: none;
-	// 		// 	}
-	// 		// }
-	// 	}
-			
-	// }
 
 }
 
