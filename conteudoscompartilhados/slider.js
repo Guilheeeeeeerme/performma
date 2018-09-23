@@ -1,16 +1,16 @@
-jQuery(document).ready(function () {
+(function () {
 
-	window.setSlider = function (selector){
+	console.log('Performma Card Slider');
 
-		console.log('Performma Card Slider');
-	
+	window.setSlider = function (selector) {
+
 		jQuery(selector).on("slide.bs.carousel", function (e) {
-	
+
 			var $e = jQuery(e.relatedTarget);
 			var idx = $e.index();
 			var itemsPerSlide = 3;
 			var totalItems = jQuery(".carousel-item").length;
-	
+
 			if (idx >= totalItems - (itemsPerSlide - 1)) {
 				var it = itemsPerSlide - (totalItems - idx);
 				for (var i = 0; i < it; i++) {
@@ -30,4 +30,5 @@ jQuery(document).ready(function () {
 
 	}
 
-});
+})();
+
