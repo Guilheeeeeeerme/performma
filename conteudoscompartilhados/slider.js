@@ -1,5 +1,5 @@
+jQuery(document).ready(function () {
 
-window.onload = function () {
 
 	console.log('Performma Card Slider');
 
@@ -27,4 +27,4 @@ window.onload = function () {
 		}
 	});
 
-};
+});

@@ -1,5 +1,4 @@
-
-window.onload = function () {
+jQuery(document).ready(function () {
 
 	console.log('Performma Translate Login Form');
 
@@ -22,4 +21,4 @@ window.onload = function () {
 	} catch (e) {
 	}
 
-};
+});
