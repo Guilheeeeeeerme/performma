@@ -4,6 +4,8 @@
 
 	window.setSlider = function (selector) {
 
+		console.log('setting setSlider to ', selector);
+
 		jQuery(selector).on("slide.bs.carousel", function (e) {
 
 			var $e = jQuery(e.relatedTarget);
