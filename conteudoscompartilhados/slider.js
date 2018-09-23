@@ -1,6 +1,6 @@
 jQuery(document).ready(function () {
 
-	function setSlider(selector){
+	window.setSlider = function (selector){
 
 		console.log('Performma Card Slider');
 	
