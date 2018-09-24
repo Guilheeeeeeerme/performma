@@ -7,7 +7,8 @@ Template: specia
 
 // @import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great');
 
-@import 'lcp';
+// @import 'lcp';
+@import 'slider';
 
 .h-10	{	min-height: 10%  ;	height: 10%;	}
 .h-20	{	min-height: 20%  ;	height: 20%;	}
@@ -31,26 +32,60 @@ body {
 #performma-side-menu {
 
 	// display: inline-block;
-    background: #fff;
+    background: transparent;
     box-sizing: border-box;
     // padding: 24px 0;
     -webkit-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
     z-index: 1;
-	padding: 8px;
+	// padding: 8px;
 	border-right: rgba(0,0,0,.2) thin solid;
+	border: none;
+	box-shadow: none;
 
-	.navbar {
-		border: none;
-		box-shadow: none;
+	.side-menu-search-label{
+		text-align: center;
+		color: white;
+		font-weight: bolder;
 	}
+}
+
+#search-categories-button-container {
+	margin-top: 20px;
+	width:100%;
+	text-align: center;
+
+	#search-categories-button {
+		display:inline-block;
+		margin:0 auto;
+	}
+
+}
+
+#parent-categories-dropdown,
+#child-categories-dropdown {
+	display: inline-block;
+	width: 100%;
+
+	@media (min-width: 768px) {
+		width: 48%;
+		border: 1%;
+	}
+
 }
 
 #performma-site-content {
 	border-left: rgba(0,0,0,.2) thin solid;
 	background-color: #FAFAFA;
 	padding: 22px;
+}
+
+#main-page-search-form {
+	height: 60vh;
+	// margin-left: 0px;
+	// margin-right: 0px;
+	background: #4885c4 url(https://github.com/Guilheeeeeeerme/performma/blob/master/conteudoscompartilhados/img/form-bg.jpg?raw=true) no-repeat;
 }
 
 .performma-social-buttons {
