@@ -9,21 +9,48 @@ Template: specia
 
 @import 'lcp';
 
-body * {
-	font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif;
-	// font-family: 'Fredericka the Great', cursive;
-}
+.h-10	{	min-height: 10%  ;	height: 10%;	}
+.h-20	{	min-height: 20%  ;	height: 20%;	}
+.h-30	{	min-height: 30%  ;	height: 30%;	}
+.h-40	{	min-height: 40%  ;	height: 40%;	}
+.h-50	{	min-height: 50%  ;	height: 50%;	}
+.h-60	{	min-height: 60%  ;	height: 60%;	}
+.h-70	{	min-height: 70%  ;	height: 70%;	}
+.h-80	{	min-height: 80%  ;	height: 80%;	}
+.h-90	{	min-height: 90%  ;	height: 90%;	}
+.h-100	{	min-height: 100% ;	height: 100%;	}
 
-#performma-side-menu {    
-	min-height: 100% !important;
-	padding: 0;
-	box-shadow: 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12), 0 2px 4px -1px rgba(0,0,0,.2);
+body {
+	min-height: 100% !important;  height: 100%;
+	* {
+		font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif;
+		// font-family: 'Fredericka the Great', cursive;
+	}	
+} 
+
+#performma-side-menu {
+
+	// display: inline-block;
+    background: #fff;
+    box-sizing: border-box;
+    // padding: 24px 0;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    z-index: 1;
+	padding: 8px;
+	border-right: rgba(0,0,0,.2) thin solid;
+
+	.navbar {
+		border: none;
+		box-shadow: none;
+	}
 }
 
 #performma-site-content {
-	.site-content {
-		padding: 22px 0px 14px;
-	}
+	border-left: rgba(0,0,0,.2) thin solid;
+	background-color: #FAFAFA;
+	padding: 22px;
 }
 
 .performma-social-buttons {
@@ -218,49 +245,41 @@ body * {
     border-radius: 10%;
 }
 
-#performma-header-container {
 
-	background: url(https://github.com/Guilheeeeeeerme/performma/blob/master/conteudoscompartilhados/img/sprite_2.png?raw=true) 0 -110px no-repeat;
-	display: block;
-	// width: 100%;
-    // min-height: 100%;
-    // position: relative;
-	// margin: 0 auto;
+#performma-header {
+	background-color: #37474f;
+	background: url(https://github.com/Guilheeeeeeerme/performma/blob/master/conteudoscompartilhados/img/sprite_2.png?raw=true);
+	background-repeat: no-repeat,no-repeat;
+	background-position: center center,center center;
 
-	#performma-header {
-	
-		padding: 0 0 28px;
+	padding: 28px 0;
 
-		> nav {
-			box-shadow: none;
+	// background: transparent;
+	box-shadow: none;
 
-			> div.navbar-header > a.custom-logo-link > img {
-				height: 60px;
-				width: 60px;
-				padding: 0;
-			}
-		}
-	
-		.upper {
-			width: 123%;
-			height: 62px;
-			background: url(https://github.com/Guilheeeeeeerme/performma/blob/master/conteudoscompartilhados/img/sprite_2.png?raw=true) 0 -110px no-repeat;
-			background-size: 100% auto;
-			position: relative;
-			margin: 0 0 23px -11%;
-		}
-
-		#menu-performma-menu {
-			height: 50px;
-			margin: 15px 0px;
-			color: #58595b;
-			font-size: 11px;
-			text-align: right;
-			position: relative;
-			top: -50px;
-		}    
-
+	.navbar-brand,
+	.site-description {
+		color: white !important;
 	}
+
+	> div.navbar-header > a.custom-logo-link > img {
+		height: 60px;
+		width: 60px;
+		padding: 0;
+	}
+
+	#menu-performma-menu {
+		height: 50px;
+		margin: 15px 0px;
+		color: #58595b;
+		font-size: 11px;
+		text-align: right;
+		position: relative;
+		top: -50px;
+		li a {
+			color: white;
+		}
+	}    
 
 }
 
