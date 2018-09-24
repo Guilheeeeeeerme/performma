@@ -1,7 +1,6 @@
 
 jQuery(document).ready(function () {
 	jQuery('.owl-carousel').owlCarousel({
-		items: 5,
 		margin: 30,
 		autoplay: true,
 		nav: true,
