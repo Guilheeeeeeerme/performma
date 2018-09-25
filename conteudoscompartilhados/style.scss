@@ -27,7 +27,60 @@ body {
 		font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif;
 		// font-family: 'Fredericka the Great', cursive;
 	}	
-} 
+}
+
+#category-list {
+
+	margin-top: 22px;
+	padding: 0px;
+
+	article[class*="category-"] {
+		vertical-align: middle;
+		margin-right: 1%;
+		border: none;
+		display: inline-block;
+		width: 100%;
+		box-shadow: 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12), 0 2px 4px -1px rgba(0,0,0,.2);
+		// padding: 0;
+
+		@media (min-width: 768px) {
+			width: 18%;
+		}
+
+		.post-thumbnail{
+
+			display: block;
+			width: 100%;
+			height: 320px;
+
+			img {
+				width: 100%;
+				height: 320px;
+				object-fit: cover;
+			}
+		}
+
+		.entry-content,
+		.entry-footer{
+			display: none;
+		}
+
+		.entry-header{
+				// box-shadow: 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12), 0 2px 4px -1px rgba(0,0,0,.2);
+				font-size: 1.5em;
+				font-weight: bolder;
+				background: white;
+				// position: absolute;
+				// top: 320px;
+				height: 130px;
+				padding: 5%;
+				// white-space: nowrap; 
+				width: 100%; 
+				// overflow: hidden;
+				// text-overflow: ellipsis;
+		}
+	}
+}
 
 #performma-side-menu {
 
@@ -43,12 +96,6 @@ body {
 	border-right: rgba(0,0,0,.2) thin solid;
 	border: none;
 	box-shadow: none;
-
-	.side-menu-search-label{
-		text-align: center;
-		color: white;
-		font-weight: bolder;
-	}
 }
 
 #search-categories-button-container {
@@ -83,9 +130,19 @@ body {
 
 #main-page-search-form {
 	height: 60vh;
-	// margin-left: 0px;
-	// margin-right: 0px;
-	background: #4885c4 url(https://github.com/Guilheeeeeeerme/performma/blob/master/conteudoscompartilhados/img/form-bg.jpg?raw=true) no-repeat;
+	background: #4885c4 url(https://github.com/Guilheeeeeeerme/performma/blob/master/conteudoscompartilhados/img/form-bg.jpg?raw=true) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
+	#performma-side-menu {
+		.side-menu-search-label{
+			text-align: center;
+			color: white;
+			font-weight: bolder;
+		}
+	}
 }
 
 .performma-social-buttons {
@@ -166,109 +223,6 @@ body {
 
 }
 
-// #performma-middle-content {
-	
-// 	section > div > div > div.site-content > h1 {
-// 		// font-family: 'Fredericka the Great', cursive !important;
-// 		// padding-top: 10px;
-// 		// height: 85px;
-// 		// background: url(https://github.com/Guilheeeeeeerme/performma/blob/master/conteudoscompartilhados/img/sprite_5.png?raw=true) no-repeat;
-// 		margin: 0 0 31px 0;
-// 		color: #fff !important;
-// 		font-size: 1.5em;
-// 		background-size: 100% 110%;
-// 		text-align: center;
-// 		background: #343434;
-// 		border-radius: 12px;
-// 	}
-	
-// 	#performma-menu-outer {
-// 		// height: 84px;
-// 		// background: url(images/bar-bg.jpg) repeat-x;
-
-// 		#performma-table {
-// 			// position: relative;
-// 			// width: 100%;
-// 			// margin: auto;
-// 			// text-align: center;
-
-// 			#performma-bg {
-// 				position: relative;
-//     			top: 50px;
-// 				background: #343434;
-// 				border-radius: 12px;
-// 				width: 100%;
-// 				height: 43px;
-// 			}
-		
-// 			#tab_container_510 {
-
-// 				position: relative;
-// 				// background: url(https://github.com/Guilheeeeeeerme/performma/blob/master/conteudoscompartilhados/img/sprite_4.png?raw=true) no-repeat; 
-// 				// background-size: 101% auto;
-// 				margin: 0 0 31px 0;
-// 				color: #fff !important;
-// 				background-size: 100% 110%;
-// 				text-align: center;
-
-// 				ul.wpsm_nav {
-// 					position: absolute;
-// 					left: 50%;
-// 					transform: translatex(-50%);
-// 					height: 43px;
-
-// 					li {
-
-// 						* {
-// 							font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif !important;
-// 							font-size: 1.5em;
-// 						}
-
-// 						// * {
-// 						// 	font-family: 'Fredericka the Great', cursive !important;
-// 						// }
-
-// 						display: inline;
-// 						font-weight: 500;
-
-// 						a {
-// 							border: none !important;
-// 							background-color: transparent !important;
-// 						}
-// 					}
-
-// 					li.active {
-// 						a {
-// 							// color: #cf1717 !important;
-// 							color: #f68b24 !important;
-// 							text-decoration: underline overline;
-// 							font-weight: bolder;
-// 						}
-// 					}
-					
-// 				}
-
-// 				#tab-content_510 {
-// 					margin-top: 50px;
-
-// 					@media (max-width: 768px) {
-// 						& {
-// 							/* For mobile: */
-// 							margin-top: 200px;
-// 						}
-// 					}
-
-
-// 				}
-
-// 			}
-
-// 		}
-
-// 	}
-
-// }
-
 #performma-login-to-download {
 	display: block;
 	text-align: center;
@@ -282,10 +236,11 @@ body {
 
 
 #performma-header {
-	background-color: #37474f;
-	background: url(https://github.com/Guilheeeeeeerme/performma/blob/master/conteudoscompartilhados/img/sprite_2.png?raw=true);
-	background-repeat: no-repeat,no-repeat;
-	background-position: center center,center center;
+	background: url(https://github.com/Guilheeeeeeerme/performma/blob/master/conteudoscompartilhados/img/sprite_2.png?raw=true) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 
 	padding: 28px 0;
 
