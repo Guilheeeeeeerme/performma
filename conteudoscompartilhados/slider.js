@@ -19,6 +19,32 @@ jQuery(document).ready(function () {
 		}
 	});
 
+	var performmaSetUrl = window.performmaSetUrl = function () {
+
+		var invalid = -1;
+		var parentCategoriesValue = parentCategories.options[parentCategories.selectedIndex].value;
+		var childCategoriesValue = childCategories.options[childCategories.selectedIndex].value;
+
+		if (parentCategoriesValue != invalid && childCategoriesValue != invalid) {
+
+			url = "<?php echo esc_url(home_url('/')); ?>category/" +
+				parentCategoriesValue + '/' +
+				childCategoriesValue;
+
+		} else if (childCategoriesValue != invalid) {
+
+			url = "<?php echo esc_url(home_url('/')); ?>category/" +
+				childCategoriesValue;
+
+		} else if (parentCategoriesValue != invalid) {
+
+			url = "<?php echo esc_url(home_url('/')); ?>category/" +
+				parentCategoriesValue;
+		}
+
+		console.log(url);
+	}
+
 	try {
 
 		var url;
@@ -27,42 +53,15 @@ jQuery(document).ready(function () {
 		var childCategories = document.getElementById("child-categories-dropdown");
 		var submitCategories = document.getElementById("search-categories-button");
 
-
-		function setUrl() {
-
-			var invalid = -1;
-			var parentCategoriesValue = parentCategories.options[parentCategories.selectedIndex].value;
-			var childCategoriesValue = childCategories.options[childCategories.selectedIndex].value;
-
-			if (parentCategoriesValue != invalid && childCategoriesValue != invalid) {
-
-				url = "<?php echo esc_url(home_url('/')); ?>category/" +
-					parentCategoriesValue + '/' +
-					childCategoriesValue;
-
-			} else if (childCategoriesValue != invalid) {
-
-				url = "<?php echo esc_url(home_url('/')); ?>category/" +
-					childCategoriesValue;
-
-			} else if (parentCategoriesValue != invalid) {
-
-				url = "<?php echo esc_url(home_url('/')); ?>category/" +
-					parentCategoriesValue;
-			}
-
-			console.log(url);
-		}
-
 		submitCategories.onclick = function () {
-			setUrl();
+			performmaSetUrl();
 			location.href = url;
 		};
 
-		parentCategories.onchange = setUrl;
-		childCategories.onchange = setUrl;
+		parentCategories.onchange = performmaSetUrl;
+		childCategories.onchange = performmaSetUrl;
 
-		setUrl();
+		performmaSetUrl();
 
 	} catch (error) {
 
