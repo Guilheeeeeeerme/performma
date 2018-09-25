@@ -21,24 +21,26 @@ jQuery(document).ready(function () {
 
 	var performmaSetUrl = window.performmaSetUrl = function () {
 
+		// <?php echo esc_url(home_url('/')); ?>
+
 		var invalid = -1;
 		var parentCategoriesValue = parentCategories.options[parentCategories.selectedIndex].value;
 		var childCategoriesValue = childCategories.options[childCategories.selectedIndex].value;
 
 		if (parentCategoriesValue != invalid && childCategoriesValue != invalid) {
 
-			url = "<?php echo esc_url(home_url('/')); ?>category/" +
+			url = "/category/" +
 				parentCategoriesValue + '/' +
 				childCategoriesValue;
 
 		} else if (childCategoriesValue != invalid) {
 
-			url = "<?php echo esc_url(home_url('/')); ?>category/" +
+			url = "/category/" +
 				childCategoriesValue;
 
 		} else if (parentCategoriesValue != invalid) {
 
-			url = "<?php echo esc_url(home_url('/')); ?>category/" +
+			url = "/category/" +
 				parentCategoriesValue;
 		}
 
