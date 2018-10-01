@@ -9,7 +9,6 @@
 	var submitCategories = document.getElementById("search-categories-button");
 
 	submitCategories.onclick = function () {
-		// performmaSetUrl();
 		location.href = performmaSetUrl();
 	};
 
@@ -20,7 +19,7 @@
 	var performmaSetUrl = window.performmaSetUrl = function () {
 
 		// <?php echo esc_url(home_url('/')); ?>
-		var url = "/category/";
+		var url = "/category/todos/";
 		var invalid = -1;
 		var parentCategoriesValue = parentCategories.options[parentCategories.selectedIndex].value;
 		var childCategoriesValue = childCategories.options[childCategories.selectedIndex].value;
@@ -41,8 +40,6 @@
 			url = "/category/" +
 				parentCategoriesValue;
 		}
-
-		console.log(url);
 		
 		return url;
 	}
@@ -50,8 +47,9 @@
 
 })();
 
-
-
+/** 
+ * Slider
+ **/
 jQuery(document).ready(function () {
 
 	jQuery('.owl-carousel').owlCarousel({
