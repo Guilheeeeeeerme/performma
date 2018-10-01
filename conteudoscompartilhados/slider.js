@@ -9,8 +9,8 @@
 	var submitCategories = document.getElementById("search-categories-button");
 
 	submitCategories.onclick = function () {
-		performmaSetUrl();
-		// location.href = performmaSetUrl();
+		// performmaSetUrl();
+		location.href = performmaSetUrl();
 	};
 
 	} catch (error) {
