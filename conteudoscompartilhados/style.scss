@@ -29,6 +29,13 @@ body {
 	}	
 }
 
+.side-menu-on-archive {
+	#child-categories-dropdown-label,
+	#parent-categories-dropdown-label {
+		color: #58595b;
+	}
+}
+
 #loginModal {
 	.nsl-container{
 		max-width: 100%;
@@ -119,10 +126,13 @@ body {
 	font-weight: bolder;
 }
 
+// #parent-categories-dropdown,
+// #child-categories-dropdown 
+
 #parent-categories-dropdown-label,
-#child-categories-dropdown-label,
-#parent-categories-dropdown,
-#child-categories-dropdown {
+#child-categories-dropdown-label {
+
+	text-shadow: 0 2px 2px rgba(0,0,0,.5);
 	display: inline-block;
 	width: 100%;
 	border: none;
@@ -140,21 +150,29 @@ body {
 	padding: 22px;
 }
 
+
+.side-menu-search-label{
+	margin-top: 0px !important;
+	text-align: center;
+	line-height: 1.375em;
+	color: #fff;
+	text-shadow: 0 2px 2px rgba(0,0,0,.5);
+	margin: .1em 0;
+	font-family: Open Sans;
+	font-weight: 600;
+
+	&.side-menu-search-label-black {
+		color: #58595b;
+	}
+}
+
 #main-page-search-form {
 	height: 70vh;
-	background: #4885c4 url(https://github.com/Guilheeeeeeerme/performma/blob/master/conteudoscompartilhados/img/form-bg.jpg?raw=true) no-repeat center center fixed; 
+	background: url(https://github.com/Guilheeeeeeerme/performma/blob/master/conteudoscompartilhados/img/form-bg.jpg?raw=true) no-repeat center center fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-
-	#performma-side-menu {
-		.side-menu-search-label{
-			text-align: center;
-			color: white;
-			font-weight: bolder;
-		}
-	}
 }
 
 .performma-social-buttons {
@@ -254,7 +272,7 @@ body {
 	-o-background-size: cover;
 	background-size: cover;
 
-	padding: 60px 0 28px 0;
+	padding: 90px 0 28px 0;
 
 	// background: transparent;
 	box-shadow: none;

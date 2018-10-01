@@ -1,28 +1,26 @@
+(function(){
 
-jQuery(document).ready(function () {
-	jQuery('.owl-carousel').owlCarousel({
-		margin: 30,
-		smartSpeed: 900,
-		nav: true,
-		responsiveClass: true,
-		navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
-		responsive: {
-			0: {
-				items: 1,
-			},
-			480: {
-				items: 1,
-			},
-			768: {
-				items: 5,
-			}
-		}
-	});
+	'use strict';
+
+	try {
+
+	var parentCategories = document.getElementById("parent-categories-dropdown");
+	var childCategories = document.getElementById("child-categories-dropdown");
+	var submitCategories = document.getElementById("search-categories-button");
+
+	submitCategories.onclick = function () {
+		performmaSetUrl();
+		// location.href = performmaSetUrl();
+	};
+
+	} catch (error) {
+
+	}
 
 	var performmaSetUrl = window.performmaSetUrl = function () {
 
 		// <?php echo esc_url(home_url('/')); ?>
-
+		var url = "/category/";
 		var invalid = -1;
 		var parentCategoriesValue = parentCategories.options[parentCategories.selectedIndex].value;
 		var childCategoriesValue = childCategories.options[childCategories.selectedIndex].value;
@@ -45,29 +43,35 @@ jQuery(document).ready(function () {
 		}
 
 		console.log(url);
+		
+		return url;
 	}
 
-	try {
 
-		var url;
+})();
 
-		var parentCategories = document.getElementById("parent-categories-dropdown");
-		var childCategories = document.getElementById("child-categories-dropdown");
-		var submitCategories = document.getElementById("search-categories-button");
 
-		submitCategories.onclick = function () {
-			performmaSetUrl();
-			location.href = url;
-		};
 
-		parentCategories.onchange = performmaSetUrl;
-		childCategories.onchange = performmaSetUrl;
+jQuery(document).ready(function () {
 
-		performmaSetUrl();
-
-	} catch (error) {
-
-	}
+	jQuery('.owl-carousel').owlCarousel({
+		margin: 30,
+		smartSpeed: 900,
+		nav: true,
+		responsiveClass: true,
+		navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
+		responsive: {
+			0: {
+				items: 1,
+			},
+			480: {
+				items: 1,
+			},
+			768: {
+				items: 5,
+			}
+		}
+	});
 
 	// Smooth scrolling using jQuery easing
 	jQuery('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
