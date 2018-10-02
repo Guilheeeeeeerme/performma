@@ -79,9 +79,9 @@ jQuery(document).ready(function () {
 
 	}
 
-	performmaCarousel(jQuery('#destaques .owl-carousel'), 1, 1, 1, true, false, false);
-	performmaCarousel(jQuery('#lancamentos .owl-carousel'), 1, 1, 5, true, false, false);
-	performmaCarousel(jQuery('#mais-acessados .owl-carousel'), 1, 1, 5, true, false, false);
+	performmaCarousel(jQuery('#destaques .owl-carousel'), 1, 1, 1, true, true, true);
+	performmaCarousel(jQuery('#lancamentos .owl-carousel'), 1, 1, 5, false, false, false);
+	performmaCarousel(jQuery('#mais-acessados .owl-carousel'), 1, 1, 5, false, false, false);
 
 	// Smooth scrolling using jQuery easing
 	jQuery('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
