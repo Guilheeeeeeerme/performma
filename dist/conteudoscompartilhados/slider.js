@@ -52,13 +52,16 @@
  **/
 jQuery(document).ready(function () {
 
-	function performmaCarousel(element, xs, sm, md){
+	function performmaCarousel(element, xs, sm, md, center, loop, autoplay){
 
 		// jQuery('.owl-carousel')
 		element.owlCarousel({
 			margin: 30,
 			smartSpeed: 900,
 			nav: true,
+			center, 
+			loop,
+			autoplay,
 			responsiveClass: true,
 			navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
 			responsive: {
@@ -76,9 +79,9 @@ jQuery(document).ready(function () {
 
 	}
 
-	performmaCarousel(jQuery('#destaques .owl-carousel'), 1, 1, 3);
-	performmaCarousel(jQuery('#lancamentos .owl-carousel'), 1, 1, 5);
-	performmaCarousel(jQuery('#mais-acessados .owl-carousel'), 1, 1, 5);
+	performmaCarousel(jQuery('#destaques .owl-carousel'), 1, 1, 1, true, false, false);
+	performmaCarousel(jQuery('#lancamentos .owl-carousel'), 1, 1, 5, true, false, false);
+	performmaCarousel(jQuery('#mais-acessados .owl-carousel'), 1, 1, 5, true, false, false);
 
 	// Smooth scrolling using jQuery easing
 	jQuery('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
