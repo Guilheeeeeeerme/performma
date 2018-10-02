@@ -79,7 +79,7 @@ jQuery(document).ready(function () {
 
 	}
 
-	performmaCarousel(jQuery('#destaques .owl-carousel'), 1, 1, 5, true, true, true);
+	performmaCarousel(jQuery('#destaques .owl-carousel'), 1, 1, 5, true, false, true);
 	performmaCarousel(jQuery('#lancamentos .owl-carousel'), 1, 1, 5, false, false, false);
 	performmaCarousel(jQuery('#mais-acessados .owl-carousel'), 1, 1, 5, false, false, false);
 
