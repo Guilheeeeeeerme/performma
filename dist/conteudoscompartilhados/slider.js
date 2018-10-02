@@ -52,24 +52,33 @@
  **/
 jQuery(document).ready(function () {
 
-	jQuery('.owl-carousel').owlCarousel({
-		margin: 30,
-		smartSpeed: 900,
-		nav: true,
-		responsiveClass: true,
-		navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
-		responsive: {
-			0: {
-				items: 1,
-			},
-			480: {
-				items: 1,
-			},
-			768: {
-				items: 5,
+	function performmaCarousel(element, xs, sm, md){
+
+		// jQuery('.owl-carousel')
+		element.owlCarousel({
+			margin: 30,
+			smartSpeed: 900,
+			nav: true,
+			responsiveClass: true,
+			navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
+			responsive: {
+				0: {
+					items: xs,
+				},
+				480: {
+					items: sm,
+				},
+				768: {
+					items: md,
+				}
 			}
-		}
-	});
+		});
+
+	}
+
+	performmaCarousel(jQuery('#destaques .owl-carousel'), 1, 1, 3);
+	performmaCarousel(jQuery('#lancamentos .owl-carousel'), 1, 1, 5);
+	performmaCarousel(jQuery('#mais-acessados .owl-carousel'), 1, 1, 5);
 
 	// Smooth scrolling using jQuery easing
 	jQuery('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {

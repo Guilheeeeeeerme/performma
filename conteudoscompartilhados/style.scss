@@ -44,8 +44,7 @@ body {
 
 #category-list {
 
-	margin-top: 22px;
-	padding: 0px;
+	padding-top: 22px;
 
 	article[class*="category-"] {
 		vertical-align: middle;
@@ -54,7 +53,6 @@ body {
 		display: inline-block;
 		width: 100%;
 		padding-bottom: 5px;
-		box-shadow: 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12), 0 2px 4px -1px rgba(0,0,0,.2);
 		// padding: 0;
 
 		@media (min-width: 768px) {
@@ -62,15 +60,21 @@ body {
 		}
 
 		.post-thumbnail{
-
 			display: block;
 			width: 100%;
-			height: 320px;
-
+		
 			img {
 				width: 100%;
-				height: 320px;
+				height: 350px;
 				object-fit: cover;
+				box-shadow: 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12), 0 2px 4px -1px rgba(0,0,0,.2);
+			
+				@media (max-width: 768px) {
+					& {
+						/* For mobile: */
+						height: 70vh;
+					}
+				}
 			}
 		}
 
@@ -80,13 +84,17 @@ body {
 		}
 
 		.entry-header {
-			font-size: 1.2em;
-			font-weight: bolder;
-			background: white;
+			.entry-title {
+				a {
+					font-size: 0.7em;
+				}
+				overflow: hidden;
+			}
+			// text-align: justify;
+			background: transparent;
 			height: 160px;
 			padding: 5%;
 			width: 100%; 
-			overflow: hidden;
 		}
 	}
 }
@@ -147,7 +155,7 @@ body {
 #performma-site-content {
 	border-left: rgba(0,0,0,.2) thin solid;
 	background-color: #FAFAFA;
-	padding: 22px;
+	padding: 0; //22px;
 }
 
 
@@ -173,6 +181,12 @@ body {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+
+	.main-page-search-form-container {
+		margin-top: 5%; 
+		background-color: rgba(0,0,0,.24);
+		padding: 10px;
+	}
 }
 
 .performma-social-buttons {
