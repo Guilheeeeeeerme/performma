@@ -10,6 +10,16 @@ Template: specia
 // @import 'lcp';
 @import 'slider';
 
+#main-page-search-form {
+	#destaques {
+		.performma-post-img {
+			height: 100%;
+			width: auto;
+			margin: auto;
+		}
+	}
+}
+
 .h-10	{	min-height: 10%  ;	height: 10%;	}
 .h-20	{	min-height: 20%  ;	height: 20%;	}
 .h-30	{	min-height: 30%  ;	height: 30%;	}
@@ -65,7 +75,7 @@ body {
 		
 			img {
 				width: 100%;
-				height: 350px;
+				height: 30%;
 				object-fit: cover;
 				box-shadow: 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12), 0 2px 4px -1px rgba(0,0,0,.2);
 			
@@ -183,7 +193,6 @@ body {
 	background-size: cover;
 
 	.main-page-search-form-container {
-		margin-top: 5%; 
 		background-color: rgba(0,0,0,.24);
 		padding: 10px;
 	}
