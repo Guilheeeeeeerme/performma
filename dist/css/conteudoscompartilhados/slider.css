@@ -1,0 +1,35 @@
+.performma-carousel .owl-nav {
+  position: absolute;
+  top: 240px;
+  width: 100%;
+}
+.performma-carousel .owl-nav .owl-prev {
+  float: left;
+}
+.performma-carousel .owl-nav .owl-next {
+  float: right;
+}
+.performma-carousel .performma-post .performma-post-link .performma-post-img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 768px) {
+  .performma-carousel .performma-post .performma-post-link .performma-post-img {
+    /* For mobile: */
+    height: 70vh;
+  }
+}
+.performma-carousel .performma-post .performma-post-link .performma-post-title {
+  font-size: 1.2em;
+  font-weight: bolder;
+  background: transparent;
+  height: 160px;
+  padding: 5%;
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+}
+
+/*# sourceMappingURL=slider.css.map */
